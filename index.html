@@ -2,9 +2,46 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400|Poppins:300" rel="stylesheet">
+
     <style>
-      * {
-        border: 1px dashed red;
+
+      html {
+        min-height: 100%;
+      }
+
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        min-height: 100%;
+        color: #FFFFFF;
+        /*background: linear-gradient(180deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);*/
+        background: radial-gradient(circle at 20% 0%, #ff8b17, #e6751f, #cc6021, #b24d22, #963b1f, #7b2b1c, #601d16, #45100e);
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+      }
+
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      ul, li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: 0 auto;
       }
 
       .avatar-image {
@@ -13,6 +50,7 @@
         object-fit: cover;
         border-radius: 128px;
         border: 2px solid lightslategray;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4);
       }
 
       .thumbnail {
@@ -21,39 +59,125 @@
         border-radius: 48px;
         object-fit: cover;
       }
+
+      .link-item {
+        background-color: rgba(149, 123, 173, 0.5);
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .link-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+      }
+
+      .social-icons-row {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+
+      .social-icons-row a {
+        font-size: 2.5rem;
+      }
+
+      .social-icons-row a:hover, .social-icons-row a:focus {
+        color: rgb(122,32,122);
+        filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+      }
+
+      .link-text {
+        text-align: center;
+        flex: 1;
+      }
+
+      .link-text:hover, .link-text:focus {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <div class="main-container">
       <div class="image-row">
-        <img src="./image/profile-anime.png" class="avatar-image" alt="Profile Picture">
+        <img src="./image/profile-anime.png" class="avatar-image" alt="Profile Anime">
       </div>
       <div class="name-row">
-        <h1>Amena H.</h1>
+        <h1>Amena</h1>
       </div>
       <div class="social-icons-row">
-        <ul>
-          <li> <a href="https://www.wikipedia.org/" target="_blank"><img src="./image/linkedin.svg" alt="Linkedin" /></a></li>
-          <li> <a href="https://www.wikipedia.org/" target="_blank"><img src="./image/linkedin.svg" alt="Linkedin" /></a></li>
-          <li> <a href="https://www.wikipedia.org/" target="_blank"><img src="./image/linkedin.svg" alt="Linkedin" /></a></li>
-          <li> <a href="https://www.wikipedia.org/" target="_blank"><img src="./image/linkedin.svg" alt="Linkedin" /></a></li>
-        </ul>
+           <a href="https://github.com/" target="_blank">
+            <i class="fa-brands fa-github"></i>
+           </a>
+           <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+           </a>
+           <a href="https://x.com/" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+           </a>
+           <a href="https://www.snapchat.com/" target="_blank">
+            <i class="fa-brands fa-square-snapchat"></i>
+           </a>
       </div>
-      <div class="links-row">
-        <ul>
-          <li><span><img class="thumbnail" src="./image/ai-code-review-rabbit.png" alt="AI Code Review Should the Author Be The Reviewer" /></span><a target="_blank" href="https://www.greptile.com/blog/ai-code-reviews-conflict?utm_source=tldrwebdev">AI Code Review: Should the Author Be The Reviewer?</a></li>
-          <li><span><img class="thumbnail" src="./image/linkedin.svg" alt="" /></span><a target="_blank" href="https://www.smashingmagazine.com/2025/04/ux-design-files-organization-template/">UX and Design Files Organization Template</a></li>
-          <li><span><img class="thumbnail" src="./image/linkedin.svg" alt="" /></span><a target="_blank" href="https://www.smashingmagazine.com/2023/07/become-better-speaker-conferences/">How to Become a Better Speaker at Conferences</a></li>
-          <li><span><img class="thumbnail" src="./image/linkedin.svg" alt="" /></span><a target="_blank" href="
-            https://www.cnet.com/tech/gaming/top-best-nintendo-switch-games/">The 20 Best Nintendo Switch Games</a></li>
-          <li><span><img class="thumbnail" src="./image/linkedin.svg" alt="" /></span><a target="_blank" href="https://medium.engineering/continuous-improvement-f8f9fabd67dd">Continuous Improvement</a></li>
-          <li><span><img class="thumbnail" src="./image/apple-touch-icon@2.png" alt="Steaming Cup" /></span><a target="_blank" href="https://softwareengineering.stackexchange.com/tour">Software Engineer Stack Exchange</a></li>
-          <li>
-            <span><img class="thumbnail" src="./image/scroll.png" alt="Parallax Scroll"></span>
-            <a target="_blank" href="https://dev.to/hexshift/building-scroll-linked-parallax-effects-in-pure-tailwind-and-vanilla-javascript-2kc7">Building Scroll-Linked Parallax Effects in Pure Tailwind and Vanilla JavaScript</a>
+      
+        <ul class="links-row">
+          <li class="link-item">
+            <img class="thumbnail" src="./image/ai-code-review-rabbit.png" alt="AI Code Review Should the Author Be The Reviewer" />
+            <a class="link-text" target="_blank" href="https://www.greptile.com/blog/ai-code-reviews-conflict?utm_source=tldrwebdev">
+              AI Code Review: Should the Author Be The Reviewer?
+            </a>
+          </li>
+          <li class="link-item">
+            <img class="thumbnail" src="./image/design_folder_structure.png" alt="Folder Strcuture" />
+            <a class="link-text" target="_blank" href="https://www.smashingmagazine.com/2025/04/ux-design-files-organization-template/">
+              UX and Design Files Organization Template
+            </a>
+          </li>
+          <li class="link-item">
+            <img class="thumbnail" src="./image/speaker.jpg" alt="Public Speaking" />
+            <a class="link-text" target="_blank" href="https://www.smashingmagazine.com/2023/07/become-better-speaker-conferences/">
+              How to Become a Better Speaker at Conferences
+            </a>
+          </li>
+          <li class="link-item">
+            <img class="thumbnail" src="./image/totk.webp" alt="Tears of the kingdom" />
+            <a class="link-text" target="_blank" href="https://www.cnet.com/tech/gaming/top-best-nintendo-switch-games/">
+              The 20 Best Nintendo Switch Games
+            </a>
+          </li>
+          <li class="link-item">
+            <img class="thumbnail" src="./image/groupwork.webp" alt="Group fist bumps" />
+            <a class="link-text" target="_blank" href="https://medium.engineering/continuous-improvement-f8f9fabd67dd">
+              Continuous Improvement
+            </a>
+          </li>
+          <li class="link-item">
+            <img class="thumbnail" src="./image/apple-touch-icon@2.png" alt="Steaming Cup" />
+            <a class="link-text" target="_blank" href="https://softwareengineering.stackexchange.com/tour">
+              Software Engineer Stack Exchange
+            </a>
+          </li>
+          <li class="link-item">
+            <img class="thumbnail" src="./image/scroll.png" alt="Parallax Scroll">
+            <a class="link-text" target="_blank" href="https://dev.to/hexshift/building-scroll-linked-parallax-effects-in-pure-tailwind-and-vanilla-javascript-2kc7">
+              Building Scroll-Linked Parallax Effects in Pure Tailwind and Vanilla JS
+            </a>
           </li>
         </ul>
-      </div>
     </div>
   </body>
 </html>
