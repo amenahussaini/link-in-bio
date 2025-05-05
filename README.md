@@ -1,3 +1,3 @@
-# static-html-template
+# Link in Bio
 
-Use this template to create static HTML websites and deploy them on Render.
+Created a general social landing page using Codespace! Check back frequently for updated content!
